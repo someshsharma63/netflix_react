@@ -26,7 +26,6 @@ const MovieList = () => {
   const [romanceMovies, setRomanceMovies] = useState([]);
 const [documentaryMovies, setDocumentaryMovies] = useState([]);
 
-
   useEffect(() => {
     const fetchAllMovies = async () => {
       try {
@@ -61,7 +60,6 @@ const MovieSection = ({ title, movies }) => (
             alt={movie.title}
             
           />
-          {/* <p>{movie.title}</p> */}
         </div>
       ))}
     </div>
